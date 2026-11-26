@@ -13,25 +13,29 @@
 
 
 <body>
-    <header class="header">
-        <a href="index.html" class="logo">
-            <i class="fa-solid fa-star" aria-hidden="true"></i>
-            Jul i Aalborg
-        </a>
-        <input type="checkbox" id="menu-toggle" class="menu-toggle">
-        <label for="menu-toggle" class="burger" aria-label="Åbn menu">
-            <i class="fa-solid fa-bars" aria-hidden="true"></i>
-        </label>
-        <nav class="hovedmenu">
-            <a href="index.html">Forside</a>
-            <a href="mad-og-drikke.html">Mad og drikke</a>
-            <a href="aktiviteter.html" aria-current="page">Aktiviteter og arrangementer</a>
-            <a href="#">Lokation og transport</a>
-            <a href="#">Åbningstider</a>
+    <!-- Samme header som index (uden hero og dato-bjælke) -->
+    <header class="header1">
+        <nav>
+            <div>
+                <i class="fa-solid fa-star"></i>
+                <h2>Jul i Aalborg</h2>
+            </div>
+            <i class="fa-solid fa-bars"></i>
+            <div class="desktopnav">
+
+                <ul>
+                    <li><a href="#">Boderne på gammeltorv <i class="fa-solid fa-angle-down"></i></a></li>
+                    <li><a href="mad-og-drikke.html">Mad og drikke</a></li>
+                    <li><a href="aktiviteter.html">Aktiviteter og arrangementer</a></li>
+                    <li><a href="#">Lokation og transport</a></li>
+                    <li><a href="#">Åbningstider</a></li>
+                </ul>
+            </div>
         </nav>
     </header>
 
-    <main>
+    <main class="main1">
+        <!-- Ikke stylet endnu: breadcrumb, h1, intro, filtre -->
         <p class="breadcrumb"><a href="index.html">Forside</a> / Aktiviteter og arrangementer</p>
         <h1>Aktiviteter og arrangementer</h1>
         <p class="intro">Skøjtebane, pariserhjul, juletræstænding og koncerter - her er alt, der sker i julen i Aalborg.
@@ -41,76 +45,103 @@
             <a href="#aktiviteter" class="chip">Aktiviteter</a>
             <a href="#arrangementer" class="chip">Arrangementer</a>
         </div>
-        <section id="aktiviteter">
+
+        <section class="dagen" id="aktiviteter">
             <h2>Aktiviteter</h2>
-            <article>
-                <img src="./assets/img/Skøjtebanen C.W Obel Plads.jpg" alt="Skøjtebanen på C.W. Obels Plads">
-                <div class="kort_indhold">
-                    <p class="eyebrow"> Aktivitet &middot; C.W. Obels Plads</p>
-                    <h3>Skøjtebane på C.W. Obels Plads</h3>
-                    <ul class="fakta">
-                        <li>28. november 2026 kl. 15.00 - 28. febuar 2027 </li>
-                        <li>Skøjteudlejning hver dag til kl. 20.00</li>
-                        <li>Lukket kl. 07.00-11.00 under isplejning</li>
-                    </ul>
 
-                    <div class="bemærk">
-                        <strong>Bemærk</strong>
-                        <p>Udlejningen er lukket 24., 25. og 31. december samt 1. januar. Hockey er ikke tilladt.</p>
-                    </div>
-                    <a href="#" class="knap">Se priser</a>
+            <!-- Billede gemt til kort-billeder får CSS:
+            <img src="./assets/img/Skøjtebanen C.W Obel Plads.jpg" alt="Skøjtebanen på C.W. Obels Plads"> -->
+            <button>
+                <div class="dato">
+                    <p class="tid">28/11</p>
+                    <p class="idag">ÅBNER</p>
                 </div>
-            </article>
+                <div class="tekst">
+                    <p class="top">Skøjtebane på C.W. Obels Plads</p>
+                    <p class="bund"><i class="fa-solid fa-location-dot"></i> C.W. Obels Plads</p>
+                </div>
+            </button>
 
-            <article>
-                <img src="./assets/img/IMG_4787.jpg" alt="Pariserhjulet i Aalborg">
-                <div>
-                    <h3>Pariserhjulet er tilbage</h3>
-                    <p>Se Aalborg oppefra med udsigt over juleboder og julelys.</p>
-                    <span class="tag">Nyhed</span>
+            <!-- Ikke stylet endnu: fakta, bemærk, knap (må ikke ligge inde i en button) -->
+            <ul class="fakta">
+                <li>28. november 2026 kl. 15.00 - 28. febuar 2027 </li>
+                <li>Skøjteudlejning hver dag til kl. 20.00</li>
+                <li>Lukket kl. 07.00-11.00 under isplejning</li>
+            </ul>
+
+            <div class="bemærk">
+                <strong>Bemærk</strong>
+                <p>Udlejningen er lukket 24., 25. og 31. december samt 1. januar. Hockey er ikke tilladt.</p>
+            </div>
+            <a href="#" class="knap">Se priser</a>
+
+            <!-- Billede gemt til kort-billeder får CSS:
+            <img src="./assets/img/IMG_4787.jpg" alt="Pariserhjulet i Aalborg"> -->
+            <button>
+                <div class="dato">
+                    <p class="tid"><i class="fa-solid fa-ticket"></i></p>
+                    <p class="idag">NYHED</p>
                 </div>
-            </article>
+                <div class="tekst">
+                    <p class="top">Pariserhjulet er tilbage</p>
+                    <p class="bund">Se Aalborg oppefra med udsigt over juleboder og julelys.</p>
+                </div>
+            </button>
         </section>
 
-        <section id="arrangementer">
+        <section class="dagen" id="arrangementer">
             <h2>Arrangementer</h2>
-            <article>
-                <img src="https://placehold.co/400x400/e9d9c4/6b645c?text=Juletræ"
-                    alt="Det tændte juletræ på Gabels Torv">
-                <div>
-                    <h3>Juletræet tændes</h3>
-                    <p>Juletræstænding kl. 15.00 ved Gabels Torv – bagefter er der fællesdans om træet.</p>
-                    <span class="tag">Gabels Torv</span>
-                </div>
-            </article>
 
-            <article>
-                <img src="https://placehold.co/400x400/e9d9c4/6b645c?text=Julemanden"
-                    alt="Julemanden ankommer med båd til havnefronten">
-                <div>
-                    <h3>Julemanden ankommer</h3>
-                    <p>Julemanden sejler ind ved havnefronten kl. 10.00 med julegodter på vejen.</p>
-                    <span class="tag">Havnefronten</span>
+            <button>
+                <div class="dato">
+                    <p class="tid">15:00</p>
+                    <p class="idag">TÆNDING</p>
                 </div>
-            </article>
+                <div class="tekst">
+                    <p class="top">Juletræet tændes</p>
+                    <p class="bund">Juletræstænding kl. 15.00 ved Gabels Torv – bagefter er der fællesdans om træet.</p>
+                    <p class="bund"><i class="fa-solid fa-location-dot"></i> Gabels Torv</p>
+                </div>
+            </button>
 
-            <article>
-                <img src="https://placehold.co/400x400/e9d9c4/6b645c?text=Julelys" alt="Julelys på Sallings facade">
-                <div>
-                    <h3>Julelys i Salling</h3>
-                    <p>Lystænding på Sallings facade og koncert med koret NABLA.</p>
-                    <span class="tag">Salling</span>
+            <button>
+                <div class="dato">
+                    <p class="tid">10:00</p>
+                    <p class="idag">ANKOMST</p>
                 </div>
-            </article>
+                <div class="tekst">
+                    <p class="top">Julemanden ankommer</p>
+                    <p class="bund">Julemanden sejler ind ved havnefronten kl. 10.00 med julegodter på vejen.</p>
+                    <p class="bund"><i class="fa-solid fa-location-dot"></i> Havnefronten</p>
+                </div>
+            </button>
 
-            <article>
-                <img src="https://placehold.co/400x400/e9d9c4/6b645c?text=Koncert" alt="Kor synger til julekoncert">
-                <div>
-                    <h3>Julekoncerter</h3>
-                    <p>Bachs Juleoratorium, Juleshowet 2026, Aalborg Brass Band, kirkekor og Nøddeknækkeren.</p>
-                    <span class="tag">Flere scener</span>
+            <button>
+                <div class="dato">
+                    <p class="tid"><i class="fa-solid fa-lightbulb"></i></p>
+                    <p class="idag">JULELYS</p>
                 </div>
-            </article>
+                <div class="tekst">
+                    <p class="top">Julelys i Salling</p>
+                    <p class="bund">Lystænding på Sallings facade og koncert med koret NABLA.</p>
+                    <p class="bund"><i class="fa-solid fa-location-dot"></i> Salling</p>
+                </div>
+            </button>
+
+            <button>
+                <div class="dato">
+                    <p class="tid"><i class="fa-solid fa-music"></i></p>
+                    <p class="idag">KONCERT</p>
+                </div>
+                <div class="tekst">
+                    <p class="top">Julekoncerter</p>
+                    <p class="bund">Bachs Juleoratorium, Juleshowet 2026, Aalborg Brass Band, kirkekor og
+                        Nøddeknækkeren.</p>
+                    <p class="bund"><i class="fa-solid fa-location-dot"></i> Flere scener</p>
+                </div>
+            </button>
+
+            <!-- Ikke stylet endnu: harmonika -->
             <details class="harmonika">
                 <summary>Julegudstjenester - Vor Frelsers Kirke</summary>
                 <ul>
@@ -125,7 +156,17 @@
         </section>
     </main>
 
+    <footer class="footer1">
+        <div>
+            <i class="fa-solid fa-star"></i>
+            <h2>Jul i Aalborg</h2>
+        </div>
+        <p>Åbningstider: Alle dage 10:00-21:00</p>
+        <p>lokation: Gammeltorv og Aalborg midtby</p>
+        <p>Følg os på instagram og facebook</p>
+        <p class="insta"><i class="fa-brands fa-facebook"></i><i class="fa-brands fa-instagram"></i></p>
 
+    </footer>
 
 </body>
 
