@@ -32,6 +32,7 @@
 
 body {
     margin: 0;
+    background-color: var(--beige);
 }
 
 
@@ -40,33 +41,64 @@ body {
     padding: 0;
     border: 0;
 
-
-
-    /* over 800px nav bar */
     nav {
+        padding-left: var(--mdspacer);
+        font-family: var(--font-heading);
+        background: var(--beige);
+        padding-right: var(--mdspacer);
         display: flex;
-        justify-content: space-between;
         align-items: center;
+        justify-content: space-between;
 
 
-
-        a {
-            color: rgb(0, 0, 0);
-            text-decoration: NONE;
+        .fa-star {
+            color: var(--yellow);
+            padding-right: 10px;
         }
 
-        ul {
+        .fa-bars {
+            font-size: 1.5rem;
+        }
+
+        div {
             display: flex;
-            padding: 0;
-            margin: 0;
-            list-style: none;
-            gap: var(--mdspacer);
-            font-size: 0.9rem;
+            align-items: center;
+
+        }
+
+        .desktopnav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+
+
+            a {
+                color: rgb(0, 0, 0);
+                text-decoration: NONE;
+            }
+
+            ul {
+                display: flex;
+                padding: 0;
+                margin: 0;
+                list-style: none;
+                gap: var(--mdspacer);
+                font-size: 0.9rem;
+            }
+
+
+
         }
 
 
-
+        .desktopnav {
+            display: none;
+        }
     }
+
+
+
 
     div.hero {
         padding-left: var(--mdspacer);
@@ -128,6 +160,10 @@ body {
         color: var(--white);
         font-family: var(--font-body);
 
+        i {
+            font-size: 1rem;
+            margin-right: 0.3rem;
+        }
 
         p {
             margin-left: var(--mdspacer);
@@ -149,6 +185,7 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    align-items: center;
 
 
     .fa-star {
@@ -156,21 +193,16 @@ nav {
         padding-right: 10px;
     }
 
-    .fa-bars {
-        font-size: 1.5rem;
+
+    a {
+        color: rgb(0, 0, 0);
+        text-decoration: NONE;
     }
 
-    div {
-        display: flex;
-        align-items: center;
-
-    }
 
 }
 
-.desktopnav {
-    display: none;
-}
+
 
 
 .main1 {
@@ -312,6 +344,7 @@ nav {
 
                 flex-shrink: 0;
 
+                p {}
 
                 .idag {
                     margin: 0 auto;
@@ -346,6 +379,7 @@ nav {
     div {
         display: flex;
         align-items: baseline;
+        margin-left: var(--mdspacer);
 
         h2 {
             font-family: var(--font-heading);
@@ -356,17 +390,16 @@ nav {
     }
 
     p {
+        margin-left: var(--mdspacer);
         color: var(--white);
         font-family: var(--font-body);
         font-weight: 200;
-        margin-left: var(--mdspacer);
     }
 
     .fa-star {
         color: var(--yellow);
         padding-right: 10px;
         margin-bottom: 0;
-        margin-left: var(--mdspacer);
     }
 
     .fa-facebook {
@@ -383,6 +416,7 @@ nav {
     .insta {
         margin-bottom: 0;
     }
+
 }
 
 
@@ -760,5 +794,16 @@ body {
 
     .insta {
         margin-bottom: 0;
+    }
+}
+
+
+@media screen and (min-width: 1024px) {
+    .desktopnav {
+        display: block;
+    }
+
+    i.fa-bars {
+        display: none;
     }
 }
