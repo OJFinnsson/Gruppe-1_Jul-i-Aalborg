@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mad og drikke</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css"
+        integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+</head>
+
+<body>
+    <header class="header">
+        <a href="index.html" class="logo">
+            <i class="fa-solid fa-star" aria-hidden="true"></i>
+            Jul i Aalborg
+        </a>
+        <input type="checkbox" id="menu-toggle" class="menu-toggle">
+        <label for="menu-toggle" class="burger" aria-label="Åbn menu">
+            <i class="fa-solid fa-bars" aria-hidden="true"></i>
+        </label>
+        <nav class="hovedmenu">
+            <a href="index.html">Forside</a>
+            <a href="mad-og-drikke.html">Mad og drikke</a>
+            <a href="aktiviteterOgArrangementer.html" aria-current="page">Aktiviteter og arrangementer</a>
+            <a href="#">Lokation og transport</a>
+            <a href="#">Åbningstider</a>
+        </nav>
+    </header>
+
+    <main>
+        <p class="breadcrumb"><a href="index.html">Forside</a> / Aktiviteter og arrangementer</p>
+        <h1>Mad og drikke</h1>
+        <p class="intro">Fra æbleskiver og gløgg til brændte mandler – find dit næste julestop på pladsen.
+        </p>
+        <img src="./assets/img/julekagerjpeg.jpeg" alt="julekager">
+
+        <div class="filtre" id="alle">
+            <a href="#alle" class="chip">Alle</a>
+            <a href="#sødesager" class="chip">Sødesager</a>
+            <a href="#varmmad" class="chip">Varm mad</a>
+            <a href="#drikke" class="chip">Drikke</a>
+        </div>
+
+        <section id="sødesager">
+            <h2>Søde sager</h2>
+
+            <article>
+                <img src="https://placehold.co/400x400/e9d9c4/6b645c?text=Mandler" alt="Brændte mandler">
+                <div>
+                    <h3>Brændte Mandler</h3>
+                    <p>Hytten med brændte mandler finder du på øverste repos. Som navnet fortæller sælger de brændte
+                        mandler. Du finder flere varianter som f.eks. jordbær, kakao, lakrids og chili. Derudover sælger
+                        de
+                        også kandiserede æbler, slikkepinde og sliksutter.</p>
+                    <span class="tag">brændte mandler</span>
+                </div>
+            </article>
+
+            <article>
+                <img src="https://placehold.co/400x400/e9d9c4/6b645c?text=Aebleskiver" alt="Aebleskiver">
+                <div>
+                    <h3>Alexanders Hytte</h3>
+                    <p>Friskbrændte mandler fra Spanien, både klassiske varianter og lakridsmandler. Derudover nybagte
+                        æbleskiver med syltetøj og flormelis samt hjemmelavet gløgg</p>
+                    <span class="tag">brændte mandler</span>
+                </div>
+            </article>
+
+            <article>
+                <img src="https://placehold.co/400x400/e9d9c4/6b645c?text=Pandekager" alt="Pandekager">
+                <div>
+                    <h3>Den Lille Pandekagevogn </h3>
+                    <p>Den Lille Pandekagevogn laver hjemmelavede pandekager og hjemmelavede æbleskiver i deres hytte på
+                        det
+                        midterste repos.</p>
+                    <span class="tag">Pandekager</span>
+                </div>
+            </article>
+
+            <article>
+                <img src="https://placehold.co/400x400/e9d9c4/6b645c?text=Churros" alt="Churros">
+                <div>
+                    <h3>Churros Vognen </h3>
+                    <p>Igen i år kan du nyde de lækreste sprøde churros på julemarkedet. Du finder dem på første repos,
+                        samt
+                        i deres vogn på Nytorv. De sprøde churros fås med forskellig topping - nutella, kanelsukker,
+                        flormelis, jordbær, chokolade, karamel og softice. Derudover sælger de kandiserede/chokolade
+                        æbler,
+                        marshmellows med chokolade, brændte mandler, kaffe og kakao. </p>
+                    <span class="tag">Churros</span>
+                </div>
+            </article>
+
+            <article>
+                <img src="https://placehold.co/400x400/e9d9c4/6b645c?text=Julebag" alt="Julebag">
+                <div>
+                    <h3>Bagerhytten</h3>
+                    <p>I år har vi i samarbejde med Aalborg Handelsskole fået en bagerhytte på julemarkedet. Alt bagværk
+                        du
+                        finder i hytten, er lokalt produceret hos Fru Søgaard. Du finder et stort udvalg af sprøde
+                        julesmåkager, samt andet lækkert julebag. Der vil være honninghjerter, honningbomber, romkugler,
+                        mini romkugler, flødeboller, p-tærter, cookies, chokoladepebernødder m.m.
+                        I småkagebøtter finder du brunkager, vaniljekranse, orange-mandel, biscotti, klejner og
+                        chokolade
+                        cookies. </p>
+                    <span class="tag">Churros</span>
+                </div>
+            </article>
+
+            <article>
+                <img src="https://placehold.co/400x400/e9d9c4/6b645c?text=Fudge" alt="Fudge">
+                <div>
+                    <h3>Fudge Hytten</h3>
+                    <p>I år har vi en lækker sød nyhed til jer. Hele vejen fra Italien, er Daniele og hans kollegaer
+                        kommet
+                        til Aalborg Julemarked med deres Fudge hytte. Her finder du et hav af forskellige fudge i
+                        forskellige smagsvarianter, farver og former. </p>
+                    <span class="tag">Churros</span>
+                </div>
+            </article>
+
+            <article>
+                <img src="https://placehold.co/400x400/e9d9c4/6b645c?text=Kastanjer" alt="Kastanjenødder">
+                <div>
+                    <h3>Økologiske Kastanjenødder </h3>
+                    <p>På det midterste repos finder du en ny hytte. I denne hytte kan du købe ristede kastanjenødder.
+                        Nødderne er økologiske. Derudover sælger de også kvalitets barista kaffe. Fx latte, cappuccino,
+                        americano osv., samt kaffe i hele bønner. </p>
+                    <span class="tag">Churros</span>
+                </div>
+            </article>
+        </section>
+
+        <section id="varmmad">
+            <h2>Varm mad</h2>
+
+            <article>
+                <img src="https://placehold.co/400x400/e9d9c4/6b645c?text=Hotdogs" alt="Hotdog">
+                <div>
+                    <h3>Grill Hytten </h3>
+                    <p>Grill Hytten finder du igen i år på Gammeltorv. Denne gang i en større hytte med mulighed for at
+                        stå
+                        i læ rundt om hytten. Her serverer de årets julefrankfurter, KÆMPE hotdogs og 1/2 meter lange
+                        hotdogs med råsyltede rødløg - en rigtig jule klassiker. Alle deres pølser grilles direkte over
+                        åben
+                        ild på den store ottekantede grill.
+                        Derudover sælger de også kolde og varme drikke og andre lækkerier. Grill Hytten finder du på
+                        midterste repos.</p>
+                    <span class="tag">Pommefritter</span>
+                </div>
+            </article>
+
+            <article>
+                <img src="https://placehold.co/400x400/e9d9c4/6b645c?text=Burger" alt="Burger">
+                <div>
+                    <h3>Caféen med Flæskestegsburgere </h3>
+                    <p>I år har vores folk i caféen valgt, at du i caféen kan købe saftige flæskestegsburgere med
+                        frisklavet
+                        flæskesteg, rødkål, syltende agurker og dressing. Hertil kan du nyde en kold juleøl, sodavand og
+                        glühwein. I år finder du caféen på midterste repos.</p>
+                    <span class="tag">Flæskestegsburgere</span>
+                </div>
+            </article>
+
+            <article>
+                <img src="https://placehold.co/400x400/e9d9c4/6b645c?text=Ost" alt="Ost">
+                <div>
+                    <h3>Hollandsk Ost</h3>
+                    <p>Hollandsk Ost finder du på nederste repos. Det er tiende gang de er med på julemarkedet. De
+                        sælger et
+                        stort udvalg af hollandsk kvalitetsost, hollandske pølser og hollandske stroopwafels
+                        (honningvafler).</p>
+                    <span class="tag">Churros</span>
+                </div>
+            </article>
+        </section>
+
+        <section id="drikke">
+            <h2>Drikke</h2>
+
+            <article>
+                <img src="https://placehold.co/400x400/e9d9c4/6b645c?text=Kaffe" alt="Kaffe">
+                <div>
+                    <h3>Kaffehytten</h3>
+                    <p>I år har vi en dejlig kaffe nyhed til jer. Kaffeexpressen har i år en hytte, hvor de sælger lækre
+                        varme drikke. Der er Cappuccino, Café Latte, Americano, espresso, varm kakao, Chai latte, Green
+                        Macha m.m.
+                        Desuden kan du købe håndlavede økologiske flødeboller, og sjove waffle sticks (vafler på pind
+                        med
+                        forskelligt topping). Derudover Kaffebønner, gavekurve, chokolade og andre lækkerier</p>
+                    <span class="tag">Churros</span>
+                </div>
+            </article>
+
+            <article>
+                <img src="https://placehold.co/400x400/e9d9c4/6b645c?text=Gluhwein" alt="Glühwein">
+                <div>
+                    <h3>Glühwein og Fadøls Hytten</h3>
+                    <p>I den store pavillon hytte på det øverste repos finder du både Glühwein, kolde fadøl og andre
+                        drikkevarer. Den store ottekantede hytte har en overdækket terrasse hele vejen rundt, så du kan
+                        stå
+                        i læ og tørvejr og nyde en varm Glühwein eller kold fadøl.</p>
+                    <span class="tag">Churros</span>
+                </div>
+            </article>
+
+            <article>
+                <img src="https://placehold.co/400x400/e9d9c4/6b645c?text=Lumumba" alt="ROMeriet">
+                <div>
+                    <h3>ROMeriet </h3>
+                    <p>ROMeriets hytte finder du på midterste repos. Her sælger de: Lumumba: varm kakao med rom,
+                        friskpisket
+                        flødeskum med vaniljesukker på toppen og chokoladedrys. Børne-Lumumba: varm kakao, friskpisket
+                        flødeskum med vaniljesukker på toppen og chokoladedrys. Romtoddy: Julete med kanelstænger,
+                        citron,
+                        rørsukker og nelliker, som er kogt op og tilsat rom inden serveringen og selvfølgeligt
+                        hjemmelavet
+                        helt fra bunden.
+                        De sælger også deres rom og julerom. ROMeriet har butik i Gravensgade, 9000 Aalborg. </p>
+                    <span class="tag">Churros</span>
+                </div>
+            </article>
+
+        </section>
+
+    </main>
+
+
+
+</body>
+
+</html>
