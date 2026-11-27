@@ -680,7 +680,7 @@ body {
 
     .main1 section.liste {
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
         align-items: start;
         gap: 1.5rem;
         padding: 0 var(--mdspacer) 2rem;
@@ -691,7 +691,9 @@ body {
     }
 
     .overskrift,
-    .harmonika {
+    .fremhaevet,
+    .harmonika,
+    .bred {
         grid-column: 1 / -1;
     }
 
@@ -699,6 +701,21 @@ body {
     .harmonika {
         width: auto;
         margin: 0;
+    }
+
+    /* skøjtemanen billede til venste, og information til højre */
+    .fremhaevet {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+
+        img {
+            height: 100%;
+        }
+    }
+
+    .harmonika ul {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
     }
 
     .underside .topbillede {
