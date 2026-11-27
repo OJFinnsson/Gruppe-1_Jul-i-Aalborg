@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="da">
 
 <head>
     <meta charset="UTF-8">
@@ -12,7 +12,6 @@
 </head>
 
 <body>
-    <!-- Samme header som index (uden hero og dato-bjælke) -->
     <header class="header1">
         <nav>
             <div>
@@ -25,7 +24,7 @@
                 <ul>
                     <li><a href="#">Boderne på gammeltorv <i class="fa-solid fa-angle-down"></i></a></li>
                     <li><a href="mad-og-drikke.html">Mad og drikke</a></li>
-                    <li><a href="aktiviteter.html">Aktiviteter og arrangementer</a></li>
+                    <li><a href="aktiviteterOgArrangementer.html">Aktiviteter og arrangementer</a></li>
                     <li><a href="#">Lokation og transport</a></li>
                     <li><a href="#">Åbningstider</a></li>
                 </ul>
@@ -33,29 +32,27 @@
         </nav>
     </header>
 
-    <main class="main1">
-        <!-- Ikke stylet endnu: breadcrumb, h1, intro, billede, filtre -->
+    <main class="main1 underside">
         <p class="breadcrumb"><a href="index.html">Forside</a> / Mad og drikke</p>
         <h1>Mad og drikke</h1>
-        <p class="intro">Fra æbleskiver og gløgg til brændte mandler – find dit næste julestop på pladsen.
-        </p>
-        <img src="./assets/img/julekagerjpeg.jpeg" alt="julekager">
+        <p class="intro">Fra æbleskiver og gløgg til brændte mandler – find dit næste julestop på pladsen.</p>
+        <img class="topbillede" src="./assets/img/julekagerjpeg.jpeg" alt="Julekager">
 
         <div class="filtre" id="alle">
-            <a href="#alle" class="chip">Alle</a>
-            <a href="#sødesager" class="chip">Sødesager</a>
+            <a href="#alle" class="chip aktiv">Alle</a>
+            <a href="#sodesager" class="chip">Søde sager</a>
             <a href="#varmmad" class="chip">Varm mad</a>
             <a href="#drikke" class="chip">Drikke</a>
         </div>
 
-        <section class="dagen" id="sødesager">
-            <h2>Søde sager</h2>
+        <section class="dagen liste" id="sodesager">
+            <div class="overskrift">
+                <h2>Søde sager</h2>
+                <span class="antal">7 boder</span>
+            </div>
 
             <button>
-                <div class="dato">
-                    <p class="tid"><i class="fa-solid fa-candy-cane"></i></p>
-                    <p class="idag">SØDT</p>
-                </div>
+                <img src="https://placehold.co/400x400/e9d9c4/6b645c?text=Mandler" alt="Brændte mandler">
                 <div class="tekst">
                     <p class="top">Brændte Mandler</p>
                     <p class="bund">Hytten med brændte mandler finder du på øverste repos. Som navnet fortæller sælger
@@ -65,10 +62,7 @@
             </button>
 
             <button>
-                <div class="dato">
-                    <p class="tid"><i class="fa-solid fa-cookie-bite"></i></p>
-                    <p class="idag">SØDT</p>
-                </div>
+                <img src="https://placehold.co/400x400/e9d9c4/6b645c?text=Aebleskiver" alt="Æbleskiver">
                 <div class="tekst">
                     <p class="top">Alexanders Hytte</p>
                     <p class="bund">Friskbrændte mandler fra Spanien, både klassiske varianter og lakridsmandler.
@@ -77,10 +71,7 @@
             </button>
 
             <button>
-                <div class="dato">
-                    <p class="tid"><i class="fa-solid fa-stroopwafel"></i></p>
-                    <p class="idag">SØDT</p>
-                </div>
+                <img src="https://placehold.co/400x400/e9d9c4/6b645c?text=Pandekager" alt="Pandekager">
                 <div class="tekst">
                     <p class="top">Den Lille Pandekagevogn</p>
                     <p class="bund">Den Lille Pandekagevogn laver hjemmelavede pandekager og hjemmelavede æbleskiver i
@@ -89,10 +80,7 @@
             </button>
 
             <button>
-                <div class="dato">
-                    <p class="tid"><i class="fa-solid fa-ice-cream"></i></p>
-                    <p class="idag">SØDT</p>
-                </div>
+                <img src="https://placehold.co/400x400/e9d9c4/6b645c?text=Churros" alt="Churros">
                 <div class="tekst">
                     <p class="top">Churros Vognen</p>
                     <p class="bund">Igen i år kan du nyde de lækreste sprøde churros på julemarkedet. Du finder dem på
@@ -103,10 +91,7 @@
             </button>
 
             <button>
-                <div class="dato">
-                    <p class="tid"><i class="fa-solid fa-cookie"></i></p>
-                    <p class="idag">SØDT</p>
-                </div>
+                <img src="https://placehold.co/400x400/e9d9c4/6b645c?text=Julebag" alt="Julebag">
                 <div class="tekst">
                     <p class="top">Bagerhytten</p>
                     <p class="bund">I år har vi i samarbejde med Aalborg Handelsskole fået en bagerhytte på
@@ -119,10 +104,7 @@
             </button>
 
             <button>
-                <div class="dato">
-                    <p class="tid"><i class="fa-solid fa-cubes-stacked"></i></p>
-                    <p class="idag">SØDT</p>
-                </div>
+                <img src="https://placehold.co/400x400/e9d9c4/6b645c?text=Fudge" alt="Fudge">
                 <div class="tekst">
                     <p class="top">Fudge Hytten</p>
                     <p class="bund">I år har vi en lækker sød nyhed til jer. Hele vejen fra Italien, er Daniele og hans
@@ -132,10 +114,7 @@
             </button>
 
             <button>
-                <div class="dato">
-                    <p class="tid"><i class="fa-solid fa-fire"></i></p>
-                    <p class="idag">SØDT</p>
-                </div>
+                <img src="https://placehold.co/400x400/e9d9c4/6b645c?text=Kastanjer" alt="Kastanjenødder">
                 <div class="tekst">
                     <p class="top">Økologiske Kastanjenødder</p>
                     <p class="bund">På det midterste repos finder du en ny hytte. I denne hytte kan du købe ristede
@@ -145,14 +124,14 @@
             </button>
         </section>
 
-        <section class="dagen" id="varmmad">
-            <h2>Varm mad</h2>
+        <section class="dagen liste" id="varmmad">
+            <div class="overskrift">
+                <h2>Varm mad</h2>
+                <span class="antal">3 boder</span>
+            </div>
 
             <button>
-                <div class="dato">
-                    <p class="tid"><i class="fa-solid fa-hotdog"></i></p>
-                    <p class="idag">MAD</p>
-                </div>
+                <img src="https://placehold.co/400x400/e9d9c4/6b645c?text=Hotdogs" alt="Hotdog">
                 <div class="tekst">
                     <p class="top">Grill Hytten</p>
                     <p class="bund">Grill Hytten finder du igen i år på Gammeltorv. Denne gang i en større hytte med
@@ -164,10 +143,7 @@
             </button>
 
             <button>
-                <div class="dato">
-                    <p class="tid"><i class="fa-solid fa-burger"></i></p>
-                    <p class="idag">MAD</p>
-                </div>
+                <img src="https://placehold.co/400x400/e9d9c4/6b645c?text=Burger" alt="Burger">
                 <div class="tekst">
                     <p class="top">Caféen med Flæskestegsburgere</p>
                     <p class="bund">I år har vores folk i caféen valgt, at du i caféen kan købe saftige
@@ -177,10 +153,7 @@
             </button>
 
             <button>
-                <div class="dato">
-                    <p class="tid"><i class="fa-solid fa-cheese"></i></p>
-                    <p class="idag">MAD</p>
-                </div>
+                <img src="https://placehold.co/400x400/e9d9c4/6b645c?text=Ost" alt="Ost">
                 <div class="tekst">
                     <p class="top">Hollandsk Ost</p>
                     <p class="bund">Hollandsk Ost finder du på nederste repos. Det er tiende gang de er med på
@@ -190,14 +163,14 @@
             </button>
         </section>
 
-        <section class="dagen" id="drikke">
-            <h2>Drikke</h2>
+        <section class="dagen liste" id="drikke">
+            <div class="overskrift">
+                <h2>Drikke</h2>
+                <span class="antal">3 boder</span>
+            </div>
 
             <button>
-                <div class="dato">
-                    <p class="tid"><i class="fa-solid fa-mug-hot"></i></p>
-                    <p class="idag">DRIKKE</p>
-                </div>
+                <img src="https://placehold.co/400x400/e9d9c4/6b645c?text=Kaffe" alt="Kaffe">
                 <div class="tekst">
                     <p class="top">Kaffehytten</p>
                     <p class="bund">I år har vi en dejlig kaffe nyhed til jer. Kaffeexpressen har i år en hytte, hvor
@@ -209,10 +182,7 @@
             </button>
 
             <button>
-                <div class="dato">
-                    <p class="tid"><i class="fa-solid fa-wine-glass"></i></p>
-                    <p class="idag">DRIKKE</p>
-                </div>
+                <img src="https://placehold.co/400x400/e9d9c4/6b645c?text=Gluhwein" alt="Glühwein">
                 <div class="tekst">
                     <p class="top">Glühwein og Fadøls Hytten</p>
                     <p class="bund">I den store pavillon hytte på det øverste repos finder du både Glühwein, kolde
@@ -222,10 +192,7 @@
             </button>
 
             <button>
-                <div class="dato">
-                    <p class="tid"><i class="fa-solid fa-mug-saucer"></i></p>
-                    <p class="idag">DRIKKE</p>
-                </div>
+                <img src="https://placehold.co/400x400/e9d9c4/6b645c?text=Lumumba" alt="Lumumba fra ROMeriet">
                 <div class="tekst">
                     <p class="top">ROMeriet</p>
                     <p class="bund">ROMeriets hytte finder du på midterste repos. Her sælger de: Lumumba: varm kakao

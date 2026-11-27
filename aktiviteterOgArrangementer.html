@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="da">
 
 <head>
     <meta charset="UTF-8">
@@ -13,7 +13,6 @@
 
 
 <body>
-    <!-- Samme header som index (uden hero og dato-bjælke) -->
     <header class="header1">
         <nav>
             <div>
@@ -26,7 +25,7 @@
                 <ul>
                     <li><a href="#">Boderne på gammeltorv <i class="fa-solid fa-angle-down"></i></a></li>
                     <li><a href="mad-og-drikke.html">Mad og drikke</a></li>
-                    <li><a href="aktiviteter.html">Aktiviteter og arrangementer</a></li>
+                    <li><a href="aktiviteterOgArrangementer.html">Aktiviteter og arrangementer</a></li>
                     <li><a href="#">Lokation og transport</a></li>
                     <li><a href="#">Åbningstider</a></li>
                 </ul>
@@ -34,123 +33,119 @@
         </nav>
     </header>
 
-    <main class="main1">
-        <!-- Ikke stylet endnu: breadcrumb, h1, intro, filtre -->
+    <main class="main1 underside">
         <p class="breadcrumb"><a href="index.html">Forside</a> / Aktiviteter og arrangementer</p>
         <h1>Aktiviteter og arrangementer</h1>
-        <p class="intro">Skøjtebane, pariserhjul, juletræstænding og koncerter - her er alt, der sker i julen i Aalborg.
-        </p>
+        <p class="intro">Skøjtebane, pariserhjul, juletræstænding og koncerter – her er alt, der sker i julen i
+            Aalborg.</p>
 
-        <div class="filtre">
+        <div class="filtre" id="alle">
+            <a href="#alle" class="chip aktiv">Alle</a>
             <a href="#aktiviteter" class="chip">Aktiviteter</a>
             <a href="#arrangementer" class="chip">Arrangementer</a>
         </div>
 
-        <section class="dagen" id="aktiviteter">
-            <h2>Aktiviteter</h2>
-
-            <!-- Billede gemt til kort-billeder får CSS:
-            <img src="./assets/img/Skøjtebanen C.W Obel Plads.jpg" alt="Skøjtebanen på C.W. Obels Plads"> -->
-            <button>
-                <div class="dato">
-                    <p class="tid">28/11</p>
-                    <p class="idag">ÅBNER</p>
-                </div>
-                <div class="tekst">
-                    <p class="top">Skøjtebane på C.W. Obels Plads</p>
-                    <p class="bund"><i class="fa-solid fa-location-dot"></i> C.W. Obels Plads</p>
-                </div>
-            </button>
-
-            <!-- Ikke stylet endnu: fakta, bemærk, knap (må ikke ligge inde i en button) -->
-            <ul class="fakta">
-                <li>28. november 2026 kl. 15.00 - 28. febuar 2027 </li>
-                <li>Skøjteudlejning hver dag til kl. 20.00</li>
-                <li>Lukket kl. 07.00-11.00 under isplejning</li>
-            </ul>
-
-            <div class="bemærk">
-                <strong>Bemærk</strong>
-                <p>Udlejningen er lukket 24., 25. og 31. december samt 1. januar. Hockey er ikke tilladt.</p>
+        <section class="dagen liste" id="aktiviteter">
+            <div class="overskrift">
+                <h2>Aktiviteter</h2>
+                <span class="antal">2 aktiviteter</span>
             </div>
-            <a href="#" class="knap">Se priser</a>
 
-            <!-- Billede gemt til kort-billeder får CSS:
-            <img src="./assets/img/IMG_4787.jpg" alt="Pariserhjulet i Aalborg"> -->
-            <button>
-                <div class="dato">
-                    <p class="tid"><i class="fa-solid fa-ticket"></i></p>
-                    <p class="idag">NYHED</p>
+            <!-- Stort kort: article, fordi det indeholder en liste og et link -->
+            <article class="fremhaevet">
+                <img src="./assets/img/Skøjtebanen C.W Obel Plads.jpg" alt="Skøjtebanen på C.W. Obels Plads">
+                <div class="indhold">
+                    <p class="eyebrow">Aktivitet &middot; C.W. Obels Plads</p>
+                    <h3>Skøjtebanen på C.W. Obels Plads</h3>
+                    <ul class="fakta">
+                        <li><i class="fa-regular fa-calendar"></i>28. november 2026 kl. 15.00 – 28. februar 2027</li>
+                        <li><i class="fa-regular fa-clock"></i>Skøjteudlejning hver dag til kl. 20.00</li>
+                        <li><i class="fa-solid fa-circle-info"></i>Lukket kl. 07.00–11.00 under isplejning</li>
+                    </ul>
+
+                    <div class="bemaerk">
+                        <strong>Bemærk</strong>
+                        <p>Udlejningen er lukket 24., 25. og 31. december samt 1. januar. Hockey er ikke tilladt.</p>
+                    </div>
+                    <a href="#" class="knap">Se priser</a>
                 </div>
+            </article>
+
+            <button>
+                <img src="./assets/img/IMG_4787.jpg" alt="Pariserhjulet i Aalborg">
                 <div class="tekst">
                     <p class="top">Pariserhjulet er tilbage</p>
                     <p class="bund">Se Aalborg oppefra med udsigt over juleboder og julelys.</p>
+                    <span class="tag">Nyhed</span>
                 </div>
             </button>
         </section>
 
-        <section class="dagen" id="arrangementer">
-            <h2>Arrangementer</h2>
+        <section class="dagen liste" id="arrangementer">
+            <div class="overskrift">
+                <h2>Arrangementer</h2>
+                <span class="antal">5 arrangementer</span>
+            </div>
 
             <button>
-                <div class="dato">
-                    <p class="tid">15:00</p>
-                    <p class="idag">TÆNDING</p>
-                </div>
+                <img src="https://placehold.co/400x400/e9d9c4/6b645c?text=Juletræ"
+                    alt="Det tændte juletræ på Gabels Torv">
                 <div class="tekst">
                     <p class="top">Juletræet tændes</p>
                     <p class="bund">Juletræstænding kl. 15.00 ved Gabels Torv – bagefter er der fællesdans om træet.</p>
-                    <p class="bund"><i class="fa-solid fa-location-dot"></i> Gabels Torv</p>
+                    <span class="tag">Gabels Torv</span>
                 </div>
             </button>
 
             <button>
-                <div class="dato">
-                    <p class="tid">10:00</p>
-                    <p class="idag">ANKOMST</p>
-                </div>
+                <img src="https://placehold.co/400x400/e9d9c4/6b645c?text=Julemanden"
+                    alt="Julemanden ankommer med båd til havnefronten">
                 <div class="tekst">
                     <p class="top">Julemanden ankommer</p>
                     <p class="bund">Julemanden sejler ind ved havnefronten kl. 10.00 med julegodter på vejen.</p>
-                    <p class="bund"><i class="fa-solid fa-location-dot"></i> Havnefronten</p>
+                    <span class="tag">Havnefronten</span>
                 </div>
             </button>
 
             <button>
-                <div class="dato">
-                    <p class="tid"><i class="fa-solid fa-lightbulb"></i></p>
-                    <p class="idag">JULELYS</p>
-                </div>
+                <img src="https://placehold.co/400x400/e9d9c4/6b645c?text=Julelys" alt="Julelys på Sallings facade">
                 <div class="tekst">
                     <p class="top">Julelys i Salling</p>
                     <p class="bund">Lystænding på Sallings facade og koncert med koret NABLA.</p>
-                    <p class="bund"><i class="fa-solid fa-location-dot"></i> Salling</p>
+                    <span class="tag">Salling</span>
                 </div>
             </button>
 
             <button>
-                <div class="dato">
-                    <p class="tid"><i class="fa-solid fa-music"></i></p>
-                    <p class="idag">KONCERT</p>
-                </div>
+                <img src="https://placehold.co/400x400/e9d9c4/6b645c?text=Koncert" alt="Kor synger til julekoncert">
                 <div class="tekst">
                     <p class="top">Julekoncerter</p>
                     <p class="bund">Bachs Juleoratorium, Juleshowet 2026, Aalborg Brass Band, kirkekor og
                         Nøddeknækkeren.</p>
-                    <p class="bund"><i class="fa-solid fa-location-dot"></i> Flere scener</p>
+                    <span class="tag">Flere scener</span>
                 </div>
             </button>
 
-            <!-- Ikke stylet endnu: harmonika -->
+            <!-- Fold-ud boks: klik på summary for at åbne/lukke (virker uden JS) -->
             <details class="harmonika">
-                <summary>Julegudstjenester - Vor Frelsers Kirke</summary>
+                <summary>
+                    <img src="https://placehold.co/400x400/e9d9c4/6b645c?text=Kirke" alt="Vor Frelsers Kirke">
+                    <div class="titel">
+                        <p class="navn">Julegudstjenester</p>
+                        <p class="sted"><i class="fa-solid fa-location-dot"></i> Vor Frelsers Kirke</p>
+                    </div>
+                    <i class="fa-solid fa-chevron-down"></i>
+                </summary>
                 <ul>
-                    <li><strong>Familie-julegudstjeneste</strong> Særligt tilrettelagt for børn og familier</li>
-                    <li><strong>Juleaftensgudstjeneste</strong> Fællessang, musik og julebudskab</li>
-                    <li><strong>1. juledag</strong> Traditionel gudstjeneste med kaffe og brød bagefter</li>
-                    <li><strong>Skumringsgudstjeneste</strong> Få ord, stille musik og plads til refleksion</li>
-                    <li><strong>Julesøndagsgudstjeneste</strong> Afslutning på juledagene med kaffe, te og brød</li>
-                    <li><strong>Nytårsgudstjeneste</strong> Bobler og kransekage efter gudstjenesten</li>
+                    <li><strong>Familie-julegudstjeneste</strong><span>Særligt tilrettelagt for børn og familier</span>
+                    </li>
+                    <li><strong>Juleaftensgudstjeneste</strong><span>Fællessang, musik og julebudskab</span></li>
+                    <li><strong>1. juledag</strong><span>Traditionel gudstjeneste med kaffe og brød bagefter</span></li>
+                    <li><strong>Skumringsgudstjeneste</strong><span>Få ord, stille musik og plads til refleksion</span>
+                    </li>
+                    <li><strong>Julesøndagsgudstjeneste</strong><span>Afslutning på juledagene med kaffe, te og
+                            brød</span></li>
+                    <li><strong>Nytårsgudstjeneste</strong><span>Bobler og kransekage efter gudstjenesten</span></li>
                 </ul>
             </details>
         </section>

@@ -36,7 +36,6 @@ body {
 }
 
 
-
 .header1 {
     margin: 0;
     padding: 0;
@@ -47,6 +46,8 @@ body {
         font-family: var(--font-heading);
         background: var(--beige);
         padding-right: var(--mdspacer);
+        border-bottom: 1px solid #E7DED2;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -263,7 +264,6 @@ body {
 
     section.dagen {
         padding-bottom: 2rem;
-        display: flex;
 
 
         .overskrift {
@@ -359,6 +359,27 @@ body {
     }
 }
 
+.main1 section.dagen button img {
+    width: 4.5rem;
+    height: 4.5rem;
+    object-fit: cover;
+    border-radius: var(--corner);
+    flex-shrink: 0;
+}
+
+.knap {
+    display: inline-block;
+    margin-left: var(--mdspacer);
+    padding: 0.8rem 1.5rem;
+    font-family: var(--font-body);
+    font-weight: bold;
+    color: var(--white);
+    text-decoration: none;
+    background: var(--red);
+    border-radius: var(--circle);
+
+}
+
 .footer1 {
     background: var(--green);
     margin: 0 auto;
@@ -436,8 +457,14 @@ body {
     .main1 section.dagen {
         display: flex;
         gap: 2rem;
+        flex-wrap: wrap;
+        align-items: flex-start;
         max-width: 1200px;
         margin: 0 auto;
+    }
+
+    .main1 section.dagen button>h2 {
+        width: 100%;
     }
 
     .main1 section.dagen button {
@@ -449,5 +476,218 @@ body {
     .main1 .kommende {
         flex: 1;
         min-width: 0;
+    }
+}
+
+/* udersider */
+.underside {
+    font-family: var(--font-body);
+
+    .breadcrumb {
+        padding-left: var(--mdspacer);
+        font-size: 0.85rem;
+        color: var(--grey);
+
+        a {
+            color: var(--grey);
+        }
+    }
+
+    h1 {
+        padding-left: var(--mdspacer);
+        font-family: var(--font-heading);
+        font-size: 2.2rem;
+    }
+
+    .intro {
+        padding: 0 var(--mdspacer);
+        color: var(--grey);
+    }
+
+    .topbillede {
+        width: 90vw;
+        height: 220px;
+        margin-left: var(--mdspacer);
+        object-fit: cover;
+        border-radius: var(--corner);
+    }
+
+    .filtre {
+        display: flex;
+        gap: 0.5rem;
+        padding: 1rem var(--mdspacer) 0;
+    }
+
+    .chip {
+        padding: 0.5rem 1rem;
+        font-weight: bold;
+        color: var(--black);
+        text-decoration: none;
+        background: #F1E6D6;
+        border-radius: var(--circle);
+    }
+
+    .chip.aktiv {
+        color: var(--white);
+        background: var(--red);
+    }
+
+    .overskrift h2 {
+        padding-left: 0;
+    }
+
+    .antal {
+        color: var(--grey);
+    }
+
+    button {
+        text-align: left;
+    }
+
+    .tag {
+        display: inline-block;
+        margin-bottom: 1rem;
+        padding: 0.2rem 0.6rem;
+        font-weight: bold;
+        background: #F1E6D6;
+        border-radius: var(--circle);
+    }
+}
+
+/* Skøjtebanen får stort kort*/
+.fremhaevet {
+    width: 90vw;
+    margin-left: var(--mdspacer);
+    overflow: hidden;
+    background: var(--white);
+    border: 1px solid #E7DED2;
+    border-radius: var(--corner);
+
+    img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+    }
+
+    .indhold {
+        padding: 1rem;
+    }
+
+    .eyebrow {
+        font-weight: bold;
+        color: var(--red);
+    }
+
+    h3 {
+        font-family: var(--font-heading);
+        font-size: 1.6rem;
+    }
+
+    .fakta {
+        padding: 0;
+        list-style: none;
+
+        i {
+            margin-right: 0.5rem;
+            color: var(--green);
+        }
+    }
+
+    .bemaerk {
+        margin-bottom: 1rem;
+        padding: 0.5rem 1rem;
+        background: var(--beige);
+        border-radius: var(--corner);
+    }
+
+    .knap {
+        margin-left: 0;
+    }
+}
+
+/* Fold-ud boks for Julegudstjenester */
+.harmonika {
+    width: 90vw;
+    margin: 0.5rem 0 0 var(--mdspacer);
+    overflow: hidden;
+    background: var(--white);
+    border: 1px solid #E7DED2;
+    border-radius: var(--corner);
+
+    summary {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        padding: 0.5rem;
+        list-style: none;
+    }
+
+    img {
+        width: 4.5rem;
+        height: 4.5rem;
+        border-radius: var(--corner);
+    }
+
+    .navn {
+        font-weight: bold;
+        margin: 0;
+    }
+
+    .sted {
+        color: var(--grey);
+        margin: 0;
+    }
+
+    ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        background: var(--beige);
+    }
+
+    li {
+        padding: 0.8rem 1rem;
+        border-top: 1px solid #E7DED2;
+    }
+
+    strong {
+        display: block;
+    }
+
+    span {
+        color: var(--grey);
+    }
+}
+
+/* Undersider - desktop kortene i 3 kolonner */
+@media screen and (min-width: 1024px) {
+
+    .underside {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .main1 section.liste {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        align-items: start;
+        gap: 1.5rem;
+        padding: 0 var(--mdspacer) 2rem;
+    }
+
+    .main1 section.liste .overskrift {
+        padding: 0;
+    }
+
+    .overskrift,
+    .harmonika {
+        grid-column: 1 / -1;
+    }
+
+    .fremhaevet,
+    .harmonika,
+    .topbillede {
+        width: auto;
+        margin: 0;
     }
 }
