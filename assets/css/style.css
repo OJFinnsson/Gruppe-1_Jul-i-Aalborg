@@ -192,6 +192,10 @@ body {
     background: var(--beige);
     margin-top: 0;
 
+    .kommende {
+        display: none;
+    }
+
     h2 {
         margin-top: 0;
         margin-bottom: 0;
@@ -259,6 +263,8 @@ body {
 
     section.dagen {
         padding-bottom: 2rem;
+        display: flex;
+
 
         .overskrift {
             display: flex;
@@ -287,9 +293,9 @@ body {
             border-radius: var(--corner);
             border: 1px solid #E7DED2;
             background: var(--white);
-            width: 90%;
             padding: 0.5rem;
             margin-top: 0.5rem;
+            width: 90vw;
 
 
             .tekst {
@@ -414,5 +420,34 @@ body {
 
     i.fa-bars {
         display: none;
+    }
+
+
+
+
+}
+
+@media screen and (min-width: 1082px) {
+
+    .main1 .kommende {
+        display: block;
+    }
+
+    .main1 section.dagen {
+        display: flex;
+        gap: 2rem;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .main1 section.dagen button {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .main1 .dagens,
+    .main1 .kommende {
+        flex: 1;
+        min-width: 0;
     }
 }
